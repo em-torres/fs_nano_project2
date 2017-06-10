@@ -2,11 +2,29 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Brighton Times</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet" type="text/css">
     <link rel="stylesheet" type="text/css" href="main.css">
+    <style type="text/css">
+      @media screen and (min-width: 650px) {
+        .hero { order: 0; width: 75%; }
+        .weather { order: 1; width: 25%; }
+        .top-news { order: 2; width: 35%; }
+        .scores { order: 3; width: 65%; }
+        .recent-news { order: 4; }
+      }
+      @media screen and (min-width: 850px) {
+        .content { width: 850px; margin-right: auto; margin-left: auto; }
+        .hero { order: 0; width: 70%; }
+        .weather { order: 2; width: 25%; }
+        .top-news { order: 1; width: 30%; }
+        .scores { order: 3; width: 75%; }
+        .recent-news { order: 4; width: 80%; margin-left: auto; margin-right: auto; }
+      }
+
+    </style>
   </head>
   <body>
 
