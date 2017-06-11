@@ -1,0 +1,20 @@
+img {
+    max-width: 100%;
+}
+.title {
+    color: white;
+    background-color: #33BEBE;
+    height: 80px;
+}
+.app {
+    display: -webkit-flex;
+    display: flex;
+    color: #7C8B88;
+}
+.description {
+    padding-left: 3%;
+    max-width: 75%;
+}
+.screenshot {
+    max-width: 25%;
+}
