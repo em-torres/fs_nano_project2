@@ -1,22 +1,31 @@
+/* Font Families and Icons */
+@import url(http://weloveiconfonts.com/api/?family=zocial);
+
+/* zocial */
+[class*="zocial-"]:before {
+  font-family: 'zocial', sans-serif;
+}
+
 @media screen and (max-width: 399px) {
-    /*h1 { color: red;}*/
+    .social { font-size: 1.7em; }
+
 }
 @media screen and (min-width: 400px) {
     .story-thumbs {
         margin-left: auto;
         margin-right: auto;
     }
+    .social { font-size: 1.7em; }
 }
-@media screen and (min-width: 550px) {
-    article p { font-size: 1.5em;  }
+@media screen and (min-width: 604px) {
+    article p { font-size: 1.5em; }
     h2 { font-size: 2.3em; }
     h1 { font-size: 3em; }
+    .social { font-size: 2em; }
 }
-
 body {
 
 }
-
 article {
     display: flex;
     flex-wrap: wrap;
@@ -24,17 +33,43 @@ article {
     margin-left: auto;
     margin-right: auto;
 }
+h1 {
+    margin: 10px 10px 15px 15px;
+    width: 100%;
 
-h1, h2, p {
+}
+h2, p {
     margin: 10px;
     width: 100%;
 }
-
 img {
-
-}
-.story-thumbs {
     max-width: 100%;
     position: relative;
     height: auto;
 }
+.social a {
+    margin: 0 auto 0 auto;
+    width: 20%;
+    display: inline-block;
+    color: inherit;
+    text-decoration: none;
+
+    border: 1px solid #000000;
+    box-shadow: 0 3px 3px #999;
+    border-radius: 27px;
+    -moz-border-radius:27px;
+    -webkit-border-radius:27px;
+}
+
+.social {
+    text-align: center;
+    width: 100%;
+    margin: 10px 0 15px 0;
+}
+.logo {
+    content: url("https://static.mailchimp.com/web/brand-assets/logo-freddie-fullcolor.svg");
+    width: 10%;
+    height: 10%;
+}
+
+
