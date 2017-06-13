@@ -13,8 +13,19 @@ module.exports = function(grunt) {
       dev: {
         options: {
           sizes: [{
+            name: 'large',
             width: '1600',
-            rename: false,
+            suffix: '_large',
+            quality: 30
+          }, {
+            name: 'medium',
+            width: '1024',
+            suffix: '_medium',
+            quality: 30
+          }, {
+            name: 'small',
+            width: '800',
+            suffix: '_small',
             quality: 30
           }]
         },
@@ -36,7 +47,7 @@ module.exports = function(grunt) {
     clean: {
       dev: {
         src: ['images'],
-      },
+      }
     },
 
     /* Generate the images directory if it is missing */
@@ -44,8 +55,8 @@ module.exports = function(grunt) {
       dev: {
         options: {
           create: ['images']
-        },
-      },
+        }
+      }
     },
 
     /* Copy the "fixed" images that don't go through processing into the images/directory */
@@ -56,8 +67,8 @@ module.exports = function(grunt) {
           src: 'images_src/fixed/*.{gif,jpg,png}',
           dest: 'images/'
         }]
-      },
-    },
+      }
+    }
   });
   
   grunt.loadNpmTasks('grunt-responsive-images');
